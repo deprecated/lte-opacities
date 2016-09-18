@@ -1,0 +1,34 @@
+* LTE opacities
+Tarea 4 de Astrofísica Estelar: Atmósferas
+
++ [[file:LTE%20Opacity.ipynb][jupyter notebook]]
++ [[file:LTE%20Opacity.pdf][PDF export]]
++ [[file:LTE%20Opacity.md][Markdown export]]
+
+
+** Command to export the notebook
+#+BEGIN_SRC bash :results verbatim
+jupyter nbconvert *.ipynb
+jupyter nbconvert --to pdf *.ipynb
+jupyter nbconvert --to markdown *.ipynb
+ls -l
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+total 5768
+-rw-r--r--@  1 will  staff  1418042 Sep 18 17:54 LTE Opacity.html
+-rw-r--r--@  1 will  staff  1312932 Sep 17 23:32 LTE Opacity.ipynb
+-rw-r--r--   1 will  staff    32054 Sep 18 17:54 LTE Opacity.md
+drwxr-xr-x  20 will  staff      680 Sep 18 17:54 LTE Opacity_files
+-rw-r--r--@  1 will  staff      102 Sep 15 09:41 README.md
+-rw-r--r--@  1 will  staff      103 Sep 18 17:51 README.org
+drwxr-xr-x@  3 will  staff      102 Sep 14 09:00 __pycache__
+-rw-r--r--@  1 will  staff     7153 Mar  8  2012 lteopacity.py
+-rw-r--r--@  1 will  staff    38664 Sep 16 23:15 test_opacity_a.png
+-rw-r--r--@  1 will  staff    44093 Sep 16 23:15 test_opacity_b.png
+-rw-r--r--@  1 will  staff    40539 Sep 16 23:15 test_opacity_c.png
+-rw-r--r--@  1 will  staff    40201 Sep 16 23:15 test_opacity_d.png
+#+end_example
+
+
