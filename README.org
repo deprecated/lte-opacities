@@ -10,25 +10,57 @@ Tarea 4 de Astrofísica Estelar: Atmósferas
 #+BEGIN_SRC bash :results verbatim
 jupyter nbconvert *.ipynb
 jupyter nbconvert --to pdf *.ipynb
-jupyter nbconvert --to markdown *.ipynb
-ls -l
+(cd docs; ln -fs ../LTE\ Opacity.html index.html)
+ls -lR 
 #+END_SRC
 
 #+RESULTS:
 #+begin_example
-total 5768
--rw-r--r--@  1 will  staff  1418042 Sep 18 17:54 LTE Opacity.html
--rw-r--r--@  1 will  staff  1312932 Sep 17 23:32 LTE Opacity.ipynb
--rw-r--r--   1 will  staff    32054 Sep 18 17:54 LTE Opacity.md
-drwxr-xr-x  20 will  staff      680 Sep 18 17:54 LTE Opacity_files
--rw-r--r--@  1 will  staff      102 Sep 15 09:41 README.md
--rw-r--r--@  1 will  staff      103 Sep 18 17:51 README.org
+total 7624
+-rw-r--r--@  1 will  staff  1432053 Sep 20 10:43 LTE Opacity.html
+-rw-r--r--@  1 will  staff  1329589 Sep 18 22:27 LTE Opacity.ipynb
+-rw-r--r--@  1 will  staff    32054 Sep 18 17:54 LTE Opacity.md
+-rw-r--r--@  1 will  staff   909441 Sep 20 10:43 LTE Opacity.pdf
+drwxr-xr-x@ 20 will  staff      680 Sep 18 17:54 LTE Opacity_files
+-rw-r--r--@  1 will  staff     1219 Sep 18 18:26 README.org
 drwxr-xr-x@  3 will  staff      102 Sep 14 09:00 __pycache__
+-rw-r--r--@  1 will  staff     4587 Sep 20 10:39 dark-jupyter-wjh.css
+-rw-r--r--@  1 will  staff       26 Sep 20 09:51 default.css
+drwxr-xr-x@  3 will  staff      102 Sep 20 10:45 docs
 -rw-r--r--@  1 will  staff     7153 Mar  8  2012 lteopacity.py
 -rw-r--r--@  1 will  staff    38664 Sep 16 23:15 test_opacity_a.png
 -rw-r--r--@  1 will  staff    44093 Sep 16 23:15 test_opacity_b.png
 -rw-r--r--@  1 will  staff    40539 Sep 16 23:15 test_opacity_c.png
 -rw-r--r--@  1 will  staff    40201 Sep 16 23:15 test_opacity_d.png
+
+./LTE Opacity_files:
+total 1680
+-rw-r--r--@ 1 will  staff  57509 Sep 20 10:43 LTE Opacity_22_0.png
+-rw-r--r--@ 1 will  staff  70232 Sep 20 10:43 LTE Opacity_24_0.png
+-rw-r--r--@ 1 will  staff  46131 Sep 20 10:43 LTE Opacity_36_0.png
+-rw-r--r--@ 1 will  staff  76438 Sep 20 10:43 LTE Opacity_41_0.png
+-rw-r--r--@ 1 will  staff  28999 Sep 20 10:43 LTE Opacity_50_0.png
+-rw-r--r--@ 1 will  staff  39767 Sep 20 10:43 LTE Opacity_52_0.png
+-rw-r--r--@ 1 will  staff  29566 Sep 20 10:43 LTE Opacity_58_0.png
+-rw-r--r--@ 1 will  staff  32221 Sep 20 10:43 LTE Opacity_59_0.png
+-rw-r--r--@ 1 will  staff  22944 Sep 20 10:43 LTE Opacity_62_0.png
+-rw-r--r--@ 1 will  staff  36919 Sep 20 10:43 LTE Opacity_68_0.png
+-rw-r--r--@ 1 will  staff  47500 Sep 20 10:43 LTE Opacity_73_0.png
+-rw-r--r--@ 1 will  staff  50891 Sep 20 10:43 LTE Opacity_77_0.png
+-rw-r--r--@ 1 will  staff  44707 Sep 20 10:43 LTE Opacity_84_0.png
+-rw-r--r--@ 1 will  staff  51330 Sep 20 10:43 LTE Opacity_87_0.png
+-rw-r--r--@ 1 will  staff  45476 Sep 20 10:43 LTE Opacity_90_0.png
+-rw-r--r--@ 1 will  staff  39438 Sep 20 10:43 LTE Opacity_93_0.png
+-rw-r--r--@ 1 will  staff  46429 Sep 20 10:43 LTE Opacity_96_0.png
+-rw-r--r--@ 1 will  staff  49964 Sep 20 10:43 LTE Opacity_98_0.png
+
+./__pycache__:
+total 16
+-rw-r--r--@ 1 will  staff  6316 Sep 14 09:00 lteopacity.cpython-34.pyc
+
+./docs:
+total 8
+lrwxr-xr-x  1 will  staff  19 Sep 20 10:45 index.html -> ../LTE Opacity.html
 #+end_example
 
 
