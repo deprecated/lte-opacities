@@ -24,7 +24,7 @@ This one should reach LTE by hard work
   #+END_SRC
 
 And this one should have it forced upon it
-#+BEGIN_SRC default-generic :tangle cloudy/limit_lte_hminus_density_grid.in :noweb yes
+#+BEGIN_SRC default-generic :tangle cloudy/force_lte_hminus_density_grid.in :noweb yes
   title H- goes to LTE
   <<continuum-input-5000>>
   <<varying-density>>
@@ -36,7 +36,7 @@ And this one should have it forced upon it
   #+END_SRC
 
 *** Snippets for input files
-  #+title: continuum-input-5000
+  #+name: continuum-input-5000
   #+BEGIN_SRC default-generic 
   #
   # commands controlling continuum =========
@@ -45,7 +45,7 @@ And this one should have it forced upon it
   #
   #+END_SRC
   
-  #+title: varying-density
+  #+name: varying-density
   #+BEGIN_SRC default-generic
   # commands for density & abundances =========
   hden 10 vary
@@ -54,7 +54,7 @@ And this one should have it forced upon it
   # Default abundance set has no grains
   #+END_SRC
 
-  #+title: geometry
+  #+name: geometry
   #+BEGIN_SRC default-generic
   #
   # commands controlling geometry  =========
@@ -62,7 +62,7 @@ And this one should have it forced upon it
   set dr 0
   #+END_SRC
   
-  #+title: other-details
+  #+name: other-details
   #+BEGIN_SRC default-generic
   #
   # other commands for details     =========
@@ -71,16 +71,16 @@ And this one should have it forced upon it
   database H-like element hydrogen collapsed levels 100
   #+END_SRC
   
-  #+title: force-lte
+  #+name: force-lte
   #+BEGIN_SRC default-generic
-  #
-  # Commands to FORCE lte (does this work?)
-  # species "H" lte
-  # database H-like levels lte
-  #
+    #
+    # Commands to FORCE lte (does this work?)
+    species "H" lte
+    database H-like levels lte
+    #
   #+END_SRC
   
-  #+title: save-output-and-monitor
+  #+name: save-output-and-monitor
   #+BEGIN_SRC default-generic
   #
   # commands controlling output    =========
@@ -99,7 +99,7 @@ And this one should have it forced upon it
   # limit_lte_hminus.in
   #+END_SRC
   
-  #+title: footer-comments
+  #+name: footer-comments
   #+BEGIN_SRC default-generic
   # 
   # class limit 

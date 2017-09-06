@@ -19,6 +19,11 @@ iterate
 constant temperature 5000
 database H-like element hydrogen collapsed levels 100
 #
+# Commands to FORCE lte (does this work?)
+species "H" lte
+database H-like levels lte
+#
+#
 # commands controlling output    =========
 save grid ".grd" last no hash
 save overview ".ovr" last no hash
