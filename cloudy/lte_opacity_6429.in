@@ -1,0 +1,72 @@
+title LTE opacity
+init "hheonly.ini"
+# Default abundance set has no grains
+#
+#
+# Thermal equilibrium radiation field
+blackbody, T = 6429 K, STE
+#
+# commands for density & abundances =========
+hden 16.89
+#
+# commands controlling geometry  =========
+stop zone 1
+set dr 0
+#
+# other commands for details     =========
+iterate
+constant temperature 6429
+species "H" LTE
+species "H+" LTE
+species "H-" LTE
+database H-like levels LTE
+species "He" LTE
+species "He+" LTE
+species "He+2" LTE
+database He-like levels LTE
+#
+# commands controlling output    =========
+save hydrogen populations last ".hpop"
+save hydrogen conditions last ".hyd"
+save overview ".ovr"
+save monitors last ".asr"
+save total opacity last ".opac"
+save species column densities last ".col"
+"e-"
+"H"
+"H+"
+"H-"
+"H2"
+"He"
+"He+"
+"He+2"
+end of species
+save cooling each last ".cool"
+save lines, emissivity, last ".em"
+H  1 4861.36A
+TotH 0 
+BFH1 0 
+BFHx 0 
+BFHe 0 
+Ba C 0
+PA C 0
+ToFF 0
+end of lines
+save species departure coefficients last ".dep" "H[:]"
+#
+# commands giving the monitors    =========
+## >>chng 02 oct 28, error from 0.02 to 0.03, increase due to karpas et al
+## H2 rate coef, much larger than before
+monitor hminus departure coefficient 1. error 0.03
+# .in
+# 
+# class limit 
+# ========================================
+# 
+
+This checks that the negative hydrogen ion goes
+to thermodynamic equilibrium when irradiated by
+a blackbody in thermodynamic equlibrium.  It was
+originally presented in
+ 
+>>refer	H-	test	Ferland, G. J., & Persson, S. E. 1989, ApJ, 347, 656

@@ -1,0 +1,6 @@
+=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 12:16:34 2017
+ Errors were found.  Summary follows.
+                   Label         line    computed     asserted Rel Err Set err  type         
+ ChkMonitor botch>>d H-            -1     0.1869 =     1.0000   0.813   0.030             <<BIG BOTCH!!
+ 
+ BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 

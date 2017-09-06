@@ -1,0 +1,12 @@
+                                                         Cloudy 13.06.01
+                                                         www.nublado.org
+
+                       **************************************13Jun01**************************************
+                       *                                                                                 *
+                       * title LTE opacity                                                               *
+                       * include "honly.ini"                                                             *
+  Unrecognized command. Key="INCL".  This is routine ParseCommands.
+ The line image was
+ ==include "honly.ini"  ==
+ Sorry.
+ [Stop in CommandError at parser.cpp:271, something went wrong]

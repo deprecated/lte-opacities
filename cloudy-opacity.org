@@ -1,0 +1,116 @@
+* LTE opacities from Cloudy
+We want an independent test to compare with the graphs in Gray
+** Relevant test cases 
++ The manual shows a lot of places that LTE can be turned on.  I will look at Cloudy's test cases to see if I can find something relevant
++ We could just let it find LTE on its own, without forcing it.  An example of this would be something like [[file:~/Work/CLOUDY/cloudy/tsuite/auto/limit_lte_hminus.in]]
+** First experiments with my own models
+** Treatment of H^{-} ion 
++ Comprehensive treatment in hazy3, section 4.5
+  + But note that Fig 4.3 is wrong - it is a repeat of the H^0 lines graph
+  + Problem is down to [[file:~/Work/CLOUDY/cloudy/docs/latex/hazy3/Hmi_vs_density.TAB][docs/latex/hazy3/Hmi_vs_density.TAB]] being the wrong data, I think
+  + It should be like lower panel of Fig 9 in Ferland & Persson 1989
++ 
+** Departure coefficients for H-
+
+This one should reach LTE by hard work
+#+BEGIN_SRC default-generic :tangle cloudy/limit_lte_hminus_density_grid.in :noweb yes
+  title H- goes to LTE
+  <<continuum-input-5000>>
+  <<varying-density>>
+  <<geometry>>
+  <<other-details>>
+  <<save-output-and-monitor>>
+  <<footer-comments>>
+  #+END_SRC
+
+And this one should have it forced upon it
+#+BEGIN_SRC default-generic :tangle cloudy/limit_lte_hminus_density_grid.in :noweb yes
+  title H- goes to LTE
+  <<continuum-input-5000>>
+  <<varying-density>>
+  <<geometry>>
+  <<other-details>>
+  <<force-lte>>
+  <<save-output-and-monitor>>
+  <<footer-comments>>
+  #+END_SRC
+
+*** Snippets for input files
+  #+title: continuum-input-5000
+  #+BEGIN_SRC default-generic 
+  #
+  # commands controlling continuum =========
+  # this is a second way to get STE and tests the energy density option
+  blackbody 5000 energy density 5000K
+  #
+  #+END_SRC
+  
+  #+title: varying-density
+  #+BEGIN_SRC default-generic
+  # commands for density & abundances =========
+  hden 10 vary
+  grid 8 16 0.5
+  init "hheonly.ini"
+  # Default abundance set has no grains
+  #+END_SRC
+
+  #+title: geometry
+  #+BEGIN_SRC default-generic
+  #
+  # commands controlling geometry  =========
+  stop zone 1
+  set dr 0
+  #+END_SRC
+  
+  #+title: other-details
+  #+BEGIN_SRC default-generic
+  #
+  # other commands for details     =========
+  iterate
+  constant temperature 5000
+  database H-like element hydrogen collapsed levels 100
+  #+END_SRC
+  
+  #+title: force-lte
+  #+BEGIN_SRC default-generic
+  #
+  # Commands to FORCE lte (does this work?)
+  # species "H" lte
+  # database H-like levels lte
+  #
+  #+END_SRC
+  
+  #+title: save-output-and-monitor
+  #+BEGIN_SRC default-generic
+  #
+  # commands controlling output    =========
+  save grid ".grd" last no hash
+  save overview ".ovr" last no hash
+  save performance ".per" last no hash
+  save monitors last no hash ".asr" last no hash
+  save species departure coefficients ".dep" "H[:]" last no hash
+  save hydrogen conditions ".hcond" last no hash
+  save hydrogen populations ".hpop" last no hash 
+  #
+  # commands giving the monitors    =========
+  ## >>chng 02 oct 28, error from 0.02 to 0.03, increase due to karpas et al
+  ## H2 rate coef, much larger than before
+  monitor hminus departure coefficient 1. error 0.03
+  # limit_lte_hminus.in
+  #+END_SRC
+  
+  #+title: footer-comments
+  #+BEGIN_SRC default-generic
+  # 
+  # class limit 
+  # ========================================
+  # 
+
+  This checks that the negative hydrogen ion goes
+  to thermodynamic equilibrium when irradiated by
+  a blackbody in thermodynamic equlibrium.  It was
+  originally presented in
+ 
+  >>refer	H-	test	Ferland, G. J., & Persson, S. E. 1989, ApJ, 347, 656
+
+#+END_SRC
