@@ -27,6 +27,7 @@
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -79,6 +80,7 @@
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -184,6 +186,7 @@
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -275,6 +278,7 @@
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -537,7 +541,7 @@ H-like iso-sequence..................      H  1      3835.38A  -10.007    0.0190
    <a>:1.60E+01  erdeFe0.0E+00  Tcompt5.92E-07  Tthr7.64E+05  <Tden>: 5.00E+03  <dens>:2.34E-16  <MolWgt>9.82E-01
      Mean Jeans  l(cm)2.92E+17  M(sun)1.53E+03  smallest:     len(cm):2.92E+17  M(sun):1.53E+03  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.9
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.6
  ConvrgError(%)  <eden>  0.003  MaxEden  0.003  <H-C>   1.59  Max(H-C)    1.59  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -685,6 +689,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -946,7 +951,7 @@ H-like iso-sequence..................      H  1      3835.38A  -10.007    0.0190
    <a>:1.60E+01  erdeFe0.0E+00  Tcompt5.92E-07  Tthr2.17E+06  <Tden>: 5.00E+03  <dens>:2.34E-16  <MolWgt>9.82E-01
      Mean Jeans  l(cm)2.92E+17  M(sun)1.53E+03  smallest:     len(cm):2.92E+17  M(sun):1.53E+03  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     9.2
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.9
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C> 614.22  Max(H-C)  614.22  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -1077,14 +1082,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:11 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 9.17
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 8.85
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000000
                                                          Cloudy 13.06.01
@@ -1116,6 +1121,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -1207,6 +1213,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -1618,6 +1625,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -2011,14 +2019,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:21 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:24 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.91
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.87
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000001
                                                          Cloudy 13.06.01
@@ -2050,6 +2058,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -2142,6 +2151,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -2405,7 +2415,7 @@ H-like iso-sequence..................      H  1      3835.38A   -8.886    0.0190
    <a>:2.07E+01  erdeFe0.0E+00  Tcompt1.63E-07  Tthr4.49E+05  <Tden>: 5.00E+03  <dens>:2.34E-15  <MolWgt>1.15E+00
      Mean Jeans  l(cm)8.52E+16  M(sun)3.81E+02  smallest:     len(cm):8.52E+16  M(sun):3.81E+02  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.4
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.2
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>   4.73  Max(H-C)    4.73  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -2553,6 +2563,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -2815,7 +2826,7 @@ H-like iso-sequence..................      H  1      3835.38A   -8.886    0.0190
    <a>:2.07E+01  erdeFe0.0E+00  Tcompt1.63E-07  Tthr1.10E+06  <Tden>: 5.00E+03  <dens>:2.34E-15  <MolWgt>1.15E+00
      Mean Jeans  l(cm)8.52E+16  M(sun)3.81E+02  smallest:     len(cm):8.52E+16  M(sun):3.81E+02  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.6
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.5
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C> 473.19  Max(H-C)  473.19  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -2946,14 +2957,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:25 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:28 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.60
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.50
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000002
                                                          Cloudy 13.06.01
@@ -2985,6 +2996,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -3078,6 +3090,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -3342,7 +3355,7 @@ H-like iso-sequence..................      H  1      3835.38A   -8.362    0.0190
    <a>:2.19E+01  erdeFe0.0E+00  Tcompt8.90E-08  Tthr3.58E+05  <Tden>: 5.00E+03  <dens>:7.39E-15  <MolWgt>1.20E+00
      Mean Jeans  l(cm)4.69E+16  M(sun)2.01E+02  smallest:     len(cm):4.69E+16  M(sun):2.01E+02  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.6
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.5
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>   7.47  Max(H-C)    7.47  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -3490,6 +3503,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -3753,7 +3767,7 @@ H-like iso-sequence..................      H  1      3835.38A   -8.362    0.0190
    <a>:2.19E+01  erdeFe0.0E+00  Tcompt8.90E-08  Tthr7.45E+05  <Tden>: 5.00E+03  <dens>:7.39E-15  <MolWgt>1.20E+00
      Mean Jeans  l(cm)4.69E+16  M(sun)2.01E+02  smallest:     len(cm):4.69E+16  M(sun):2.01E+02  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.9
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.8
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C> 347.93  Max(H-C)  347.93  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -3884,14 +3898,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:24 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.89
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.81
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000003
                                                          Cloudy 13.06.01
@@ -3923,6 +3937,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -4016,6 +4031,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -4428,6 +4444,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -4691,7 +4708,7 @@ H-like iso-sequence..................      H  1      3835.38A   -7.848    0.0190
    <a>:2.25E+01  erdeFe0.0E+00  Tcompt4.93E-08  Tthr4.82E+05  <Tden>: 5.00E+03  <dens>:2.34E-14  <MolWgt>1.24E+00
      Mean Jeans  l(cm)2.60E+16  M(sun)1.09E+02  smallest:     len(cm):2.60E+16  M(sun):1.09E+02  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.9
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.8
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C> 230.01  Max(H-C)  230.01  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -4822,14 +4839,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:20 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:23 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.87
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.83
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000004
                                                          Cloudy 13.06.01
@@ -4861,6 +4878,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -4954,6 +4972,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -5369,6 +5388,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -5764,14 +5784,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:15 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.83
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.78
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000005
                                                          Cloudy 13.06.01
@@ -5803,6 +5823,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -5896,6 +5917,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -6311,6 +6333,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -6706,14 +6729,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:23 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:26 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.75
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.74
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000006
                                                          Cloudy 13.06.01
@@ -6745,6 +6768,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -6838,6 +6862,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -7255,6 +7280,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -7519,7 +7545,7 @@ H-like iso-sequence..................      H  1      3835.38A   -6.333    0.0190
    <a>:2.30E+01  erdeFe0.0E+00  Tcompt8.62E-09  Tthr1.04E+05  <Tden>: 5.00E+03  <dens>:7.39E-13  <MolWgt>1.27E+00
      Mean Jeans  l(cm)4.56E+15  M(sun)1.85E+01  smallest:     len(cm):4.56E+15  M(sun):1.85E+01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.8
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.7
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  32.36  Max(H-C)   32.36  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -7650,14 +7676,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:20 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:23 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9960 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.76
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.73
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000007
                                                          Cloudy 13.06.01
@@ -7689,6 +7715,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -7782,6 +7809,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -8051,7 +8079,7 @@ H-like iso-sequence..................      H  1      3835.38A   -5.832    0.0190
    <a>:2.24E+01  erdeFe0.0E+00  Tcompt4.84E-09  Tthr5.42E+04  <Tden>: 5.00E+03  <dens>:2.34E-12  <MolWgt>1.28E+00
      Mean Jeans  l(cm)2.56E+15  M(sun)1.03E+01  smallest:     len(cm):2.56E+15  M(sun):1.03E+01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.7
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.5
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  23.12  Max(H-C)   23.12  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -8200,6 +8228,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -8464,7 +8493,7 @@ H-like iso-sequence..................      H  1      3835.38A   -5.832    0.0190
    <a>:2.24E+01  erdeFe0.0E+00  Tcompt4.84E-09  Tthr5.95E+04  <Tden>: 5.00E+03  <dens>:2.34E-12  <MolWgt>1.28E+00
      Mean Jeans  l(cm)2.56E+15  M(sun)1.03E+01  smallest:     len(cm):2.56E+15  M(sun):1.03E+01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     9.0
+ Hatom level155  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.8
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>   7.57  Max(H-C)    7.57  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -8595,14 +8624,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:11 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9961 =     1.0000   0.004   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 9.03
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 8.77
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000008
                                                          Cloudy 13.06.01
@@ -8634,6 +8663,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -8726,6 +8756,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -9144,6 +9175,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -9539,14 +9571,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:16 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:19 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9965 =     1.0000   0.003   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.82
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 1.78
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000009
                                                          Cloudy 13.06.01
@@ -9578,6 +9610,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -9671,6 +9704,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -9922,7 +9956,7 @@ H-like iso-sequence..................      H  1      3835.38A   -4.831    0.0190
    <a>:1.70E+01  erdeFe0.0E+00  Tcompt1.53E-09  Tthr1.86E+04  <Tden>: 5.00E+03  <dens>:2.34E-11  <MolWgt>1.28E+00
      Mean Jeans  l(cm)8.09E+14  M(sun)3.26E+00  smallest:     len(cm):8.09E+14  M(sun):3.26E+00  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level137  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.6
+ Hatom level137  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.4
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  25.52  Max(H-C)   25.52  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -10067,6 +10101,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -10310,7 +10345,7 @@ H-like iso-sequence..................      H  1      3835.38A   -4.831    0.0190
    <a>:1.70E+01  erdeFe0.0E+00  Tcompt1.53E-09  Tthr1.92E+04  <Tden>: 5.00E+03  <dens>:2.34E-11  <MolWgt>1.28E+00
      Mean Jeans  l(cm)8.09E+14  M(sun)3.26E+00  smallest:     len(cm):8.09E+14  M(sun):3.26E+00  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level137  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.9
+ Hatom level137  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.7
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  15.67  Max(H-C)   15.67  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -10437,14 +10472,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:10 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9966 =     1.0000   0.003   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 8.87
+ Cloudy ends: 1 zone, 2 iterations, 1 caution. (4 forked threads) ExecTime(s) 8.72
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000010
                                                          Cloudy 13.06.01
@@ -10476,6 +10511,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -10569,6 +10605,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -10962,6 +10999,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -11329,14 +11367,14 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:18 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:22 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor -      d H-            -1     0.9920 =     1.0000   0.008   0.030            
  
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 2 cautions. (4 forked threads) ExecTime(s) 1.62
+ Cloudy ends: 1 zone, 2 iterations, 2 cautions. (4 forked threads) ExecTime(s) 1.63
  [Stop in cdMain at maincl.cpp:462, Cloudy exited OK]
  ************************************************** GRID_DELIMIT -- grid000000011
                                                          Cloudy 13.06.01
@@ -11368,6 +11406,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -11462,6 +11501,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -11853,6 +11893,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -12216,7 +12257,7 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:15 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor botch>>d H-            -1     0.9633 =     1.0000   0.037   0.030            
@@ -12224,7 +12265,7 @@ H- goes to LTE
  BOTCHED MONITORS!!!   Botched Monitors!!! 
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 2 cautions, BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.68
+ Cloudy ends: 1 zone, 2 iterations, 2 cautions, BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.66
  [Stop in cdMain at maincl.cpp:462, something went wrong]
  ************************************************** GRID_DELIMIT -- grid000000012
                                                          Cloudy 13.06.01
@@ -12256,6 +12297,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -12352,6 +12394,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -12743,6 +12786,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -13105,7 +13149,7 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:24 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor botch>>d H-            -1     0.8596 =     1.0000   0.140   0.030             <<BIG BOTCH!!
@@ -13113,7 +13157,7 @@ H- goes to LTE
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.63
+ Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.65
  [Stop in cdMain at maincl.cpp:462, something went wrong]
  ************************************************** GRID_DELIMIT -- grid000000013
                                                          Cloudy 13.06.01
@@ -13145,6 +13189,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -13240,6 +13285,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -13492,7 +13538,7 @@ H-like iso-sequence..................      H  1      3835.38A   -2.830    0.0190
    <a>:1.29E+00  erdeFe0.0E+00  Tcompt1.53E-10  Tthr1.93E+03  <Tden>: 5.00E+03  <dens>:2.34E-09  <MolWgt>1.28E+00
      Mean Jeans  l(cm)8.09E+13  M(sun)3.25E-01  smallest:     len(cm):8.09E+13  M(sun):3.25E-01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 87  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.6
+ Hatom level 87  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.4
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  47.89  Max(H-C)   47.89  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -13627,6 +13673,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -13872,7 +13919,7 @@ H-like iso-sequence..................      H  1      3835.38A   -2.830    0.0190
    <a>:1.29E+00  erdeFe0.0E+00  Tcompt1.53E-10  Tthr1.93E+03  <Tden>: 5.00E+03  <dens>:2.34E-09  <MolWgt>1.28E+00
      Mean Jeans  l(cm)8.09E+13  M(sun)3.25E-01  smallest:     len(cm):8.09E+13  M(sun):3.25E-01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 87  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.9
+ Hatom level 87  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     8.6
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  46.98  Max(H-C)   46.98  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -13987,7 +14034,7 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:11 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor botch>>d H-            -1     0.6221 =     1.0000   0.378   0.030             <<BIG BOTCH!!
@@ -13995,7 +14042,7 @@ H- goes to LTE
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 8.87
+ Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 8.59
  [Stop in cdMain at maincl.cpp:462, something went wrong]
  ************************************************** GRID_DELIMIT -- grid000000014
                                                          Cloudy 13.06.01
@@ -14027,6 +14074,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -14126,6 +14174,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -14374,7 +14423,7 @@ RRC..................................      H  1      3770.63A   -2.646    0.0092
    <a>:5.35E-01  erdeFe0.0E+00  Tcompt8.58E-11  Tthr1.09E+03  <Tden>: 5.00E+03  <dens>:7.39E-09  <MolWgt>1.28E+00
      Mean Jeans  l(cm)4.55E+13  M(sun)1.83E-01  smallest:     len(cm):4.55E+13  M(sun):1.83E-01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 80  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.3
+ Hatom level 80  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.4
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  63.09  Max(H-C)   63.09  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -14507,6 +14556,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -14861,7 +14911,7 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:14 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor botch>>d H-            -1     0.3243 =     1.0000   0.676   0.030             <<BIG BOTCH!!
@@ -14869,7 +14919,7 @@ H- goes to LTE
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.58
+ Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.59
  [Stop in cdMain at maincl.cpp:462, something went wrong]
  ************************************************** GRID_DELIMIT -- grid000000015
                                                          Cloudy 13.06.01
@@ -14901,6 +14951,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -15000,6 +15051,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -15244,7 +15296,7 @@ Pcon      5000.00A   10.811 *********      H  1      3734.36A   -2.395    0.0052
    <a>:2.26E-01  erdeFe0.0E+00  Tcompt4.83E-11  Tthr6.11E+02  <Tden>: 5.00E+03  <dens>:2.34E-08  <MolWgt>1.28E+00
      Mean Jeans  l(cm)2.56E+13  M(sun)1.03E-01  smallest:     len(cm):2.56E+13  M(sun):1.03E-01  a_ox tran:  0.00
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 74  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.4
+ Hatom level 74  HatomType: add  HInducImp  T  He tot level: 63  He2 level:   70  ExecTime     1.3
  ConvrgError(%)  <eden>  0.000  MaxEden  0.000  <H-C>  73.47  Max(H-C)   73.47  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   0.0  elec den   0.0  n(H2)    0.0  n(CO)        0.0
 
@@ -15375,6 +15427,7 @@ H- goes to LTE
                        * #                                                                               *
                        * # Commands to FORCE lte (does this work?)                                       *
                        * species "H" lte                                                                 *
+                       * species "H-" lte                                                                *
                        * database H-like levels lte                                                      *
                        * #                                                                               *
                        * #                                                                               *
@@ -15723,7 +15776,7 @@ H- goes to LTE
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
-=============Results of monitors: Cloudy 13.06.01 Tue Sep  5 22:37:24 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor botch>>d H-            -1     0.1298 =     1.0000   0.870   0.030             <<BIG BOTCH!!
@@ -15731,6 +15784,6 @@ H- goes to LTE
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
  Cloudy compiled on Aug 31 2017 in OS Apple MacOS using the clang++ 810 compiler. Mode I32LP64, denormalized float: T double: T.
 
- Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.59
+ Cloudy ends: 1 zone, 2 iterations, 4 cautions, BIG BOTCHED MONITORS!!!. (4 forked threads) ExecTime(s) 1.57
  [Stop in cdMain at maincl.cpp:462, something went wrong]
  ************************************************** GRID_DELIMIT -- grid000000016

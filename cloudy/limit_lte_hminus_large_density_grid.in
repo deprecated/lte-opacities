@@ -17,13 +17,10 @@ set dr 0
 # other commands for details     =========
 iterate
 constant temperature 5000
-database H-like element hydrogen collapsed levels 100
-#
-# Commands to FORCE lte (does this work?)
-species "H" lte
-species "H-" lte
-database H-like levels lte
-#
+# This uses 40 resolved levels
+database H-like levels large element hydrogen
+# And then another 60 collapsed levels on top
+database H-like collapsed levels 60 element hydrogen
 #
 # commands controlling output    =========
 save grid ".grd" last no hash

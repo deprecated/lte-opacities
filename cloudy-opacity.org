@@ -19,9 +19,10 @@ This one should reach LTE by hard work
   <<varying-density>>
   <<geometry>>
   <<other-details>>
+  <<h0-levels-medium>>
   <<save-output-and-monitor>>
   <<footer-comments>>
-  #+END_SRC
+#+END_SRC
 
 And this one should have it forced upon it
 #+BEGIN_SRC default-generic :tangle cloudy/force_lte_hminus_density_grid.in :noweb yes
@@ -30,10 +31,23 @@ And this one should have it forced upon it
   <<varying-density>>
   <<geometry>>
   <<other-details>>
+  <<h0-levels-medium>>
   <<force-lte>>
   <<save-output-and-monitor>>
   <<footer-comments>>
-  #+END_SRC
+#+END_SRC
+
+Now try one with a larger number of resolved levels
+#+BEGIN_SRC default-generic :tangle cloudy/limit_lte_hminus_large_density_grid.in :noweb yes
+  title H- goes to LTE
+  <<continuum-input-5000>>
+  <<varying-density>>
+  <<geometry>>
+  <<other-details>>
+  <<h0-levels-large>>
+  <<save-output-and-monitor>>
+  <<footer-comments>>
+#+END_SRC
 
 *** Snippets for input files
   #+name: continuum-input-5000
@@ -68,14 +82,27 @@ And this one should have it forced upon it
   # other commands for details     =========
   iterate
   constant temperature 5000
-  database H-like element hydrogen collapsed levels 100
+    #+END_SRC
+  
+  #+name: h0-levels-medium
+  #+BEGIN_SRC default-generic
+    database H-like element hydrogen collapsed levels 100
   #+END_SRC
   
+  #+name: h0-levels-large
+  #+BEGIN_SRC default-generic
+    # This uses 40 resolved levels
+    database H-like levels large element hydrogen
+    # And then another 60 collapsed levels on top
+    database H-like collapsed levels 60 element hydrogen
+  #+END_SRC
+
   #+name: force-lte
   #+BEGIN_SRC default-generic
     #
     # Commands to FORCE lte (does this work?)
     species "H" lte
+    species "H-" lte
     database H-like levels lte
     #
   #+END_SRC

@@ -1,90 +1,90 @@
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:55:20 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:24 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:59:56 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:28 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:04:11 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:02:22 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:23 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:00:24 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:59:20 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:26 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:02:59 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9959 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:23 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:01:20 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9960 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:55:09 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9961 =     1.0000   0.004   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:19 2017
- No errors were found.  Summary follows.
-                   Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor        d H-            -1     0.9965 =     1.0000   0.003   0.030            
- 
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:57:38 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
  ChkMonitor        d H-            -1     0.9966 =     1.0000   0.003   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:22 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:55:28 2017
  No errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor -      d H-            -1     0.9920 =     1.0000   0.008   0.030            
+ ChkMonitor        d H-            -1     0.9967 =     1.0000   0.003   0.030            
  
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:01:19 2017
+ No errors were found.  Summary follows.
+                   Label         line    computed     asserted Rel Err Set err  type         
+ ChkMonitor -      d H-            -1     0.9919 =     1.0000   0.008   0.030            
+ 
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:58:16 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor botch>>d H-            -1     0.9633 =     1.0000   0.037   0.030            
+ ChkMonitor botch>>d H-            -1     0.9610 =     1.0000   0.039   0.030            
  
  BOTCHED MONITORS!!!   Botched Monitors!!! 
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:03:32 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor botch>>d H-            -1     0.8596 =     1.0000   0.140   0.030             <<BIG BOTCH!!
+ ChkMonitor botch>>d H-            -1     0.8510 =     1.0000   0.149   0.030             <<BIG BOTCH!!
  
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:14 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:57:29 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor botch>>d H-            -1     0.6221 =     1.0000   0.378   0.030             <<BIG BOTCH!!
+ ChkMonitor botch>>d H-            -1     0.6075 =     1.0000   0.393   0.030             <<BIG BOTCH!!
  
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:18 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:58:38 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor botch>>d H-            -1     0.3243 =     1.0000   0.676   0.030             <<BIG BOTCH!!
+ ChkMonitor botch>>d H-            -1     0.3137 =     1.0000   0.686   0.030             <<BIG BOTCH!!
  
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
-=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 13:15:27 2017
+=============Results of monitors: Cloudy 13.06.01 Fri Sep  8 14:02:51 2017
  Errors were found.  Summary follows.
                    Label         line    computed     asserted Rel Err Set err  type         
- ChkMonitor botch>>d H-            -1     0.1298 =     1.0000   0.870   0.030             <<BIG BOTCH!!
+ ChkMonitor botch>>d H-            -1     0.1259 =     1.0000   0.874   0.030             <<BIG BOTCH!!
  
  BIG BOTCHED MONITORS!!!   Big Botched Monitors!!! 
