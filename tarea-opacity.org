@@ -1,0 +1,20 @@
+* Converting the .pynb files
+#+BEGIN_SRC sh :results verbatim
+jupyter nbconvert *.ipynb
+jupyter nbconvert --to pdf *.ipynb
+jupyter nbconvert --to markdown *.ipynb
+#+END_SRC
+
+#+BEGIN_SRC sh :results verbatim
+ls -l docs
+#+END_SRC
+
+
+#+RESULTS:
+: total 5632
+: -rw-r--r--@  1 will  staff       26 Sep  5 22:29 CNAME
+: -rw-r--r--@  1 will  staff  2273111 Sep 13 08:50 LTE Opacity.html
+: -rw-r--r--@  1 will  staff   385420 Sep 13 08:50 LTE Opacity.md
+: -rw-r--r--@  1 will  staff   212461 Sep 13 08:50 LTE Opacity.pdf
+: drwxr-xr-x@ 21 will  staff      714 Sep 13 08:51 LTE Opacity_files
+: lrwxr-xr-x   1 will  staff       16 Sep 20  2016 index.html -> LTE Opacity.html
