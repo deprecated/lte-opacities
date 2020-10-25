@@ -4,7 +4,50 @@ Tarea 4 de Astrofísica Estelar: Atmósferas
 + [[file:LTE%20Opacity.ipynb][jupyter notebook]]
 + [[file:LTE%20Opacity.pdf][PDF export]]
 + [[file:LTE%20Opacity.md][Markdown export]]
-
+** Sync between org <-> markdown <-> jupyter
++ Using the jupytext extension, we can have the ~.ipynb~ file associated with a markdown file, which gets saved automatically.
++ Conversion between markdown and org-mode can be done using ~pandoc~
+  + Maybe this could be incorporated into jupytext, but for the moment I do it by hand:
+    + From markdown to org-mode:
+      #+begin_src sh
+        pandoc -f markdown -t org -o 'LTE Opacity.org' 'LTE Opacity.md'
+      #+end_src
+    + From org-mode to markdown
+      + This is more of a pain. Neither pandoc nor org-mode's built-in vanilla markdown exporter do a very good job of writing markdown that jupyter can deal with. Pandoc uses underlining rather than hash symbols for the section headers, which means that jupytext does not split them up into cells.  The vanilla org mode exporter uses indentation instead of triple backticks for the source blocks, so they are not recognized as python by jupytext. 
+      + The best bet is ox-gfm, which writes github-flavored markdown, but even this needs some fixes. These are the steps:
+        1. Export with ~C-c C-e g o~
+        2. The math gets written with latex delimiters ~\( ... \)~, whereas jupyter only understands plain tex syntax: ~$ ... $~
+           - The jupyter developers won't fix this since ~\(\)~ conflicts with their markdown syntax
+           - So, I post-process with 
+             #+begin_src elisp
+               (query-replace-regexp "\\\\(\\(.*?\\)\\\\)" "$\\1$" nil nil nil nil nil)
+               (query-replace-regexp "\\\\\\[\\(.*?\\)\\\\\\]" "$$\\1$$" nil nil nil nil nil)
+             #+end_src
+        3. Need to add the following to the top of the file, so that jupytext will do the right thing:
+           #+begin_example
+             ---
+             jupyter:
+               jupytext:
+                 formats: ipynb,py:light,md
+                 text_representation:
+                   extension: .md
+                   format_name: markdown
+                   format_version: '1.2'
+                   jupytext_version: 1.3.3
+               kernel_info:
+                 name: python3
+               kernelspec:
+                 display_name: Python 3
+                 language: python
+                 name: python3
+             ---
+           #+end_example
+        4. Use jupytext to write the jupyter notebook
+           #+begin_src sh
+             jupytext --to notebook Atmos-Tarea04-Enunciado-pandoc.md
+           #+end_src
+        5. Other little things:
+           - You can use non-math-mode subscripts and superscripts in org, which get translated to ~<sub>~ and ~<sup>~ HTML tags in the notebook, *but* jupyter is pretty bad at getting the line spacing right with these, especially in nested lists.  To work around it, for small integers and plus and minus signs, you can use the unicode superscript characters directly.  For instance, insert with ~C-c u~
 
 ** Command to export the notebook
 #+BEGIN_SRC bash :results verbatim

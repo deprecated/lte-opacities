@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-10-24 Sat 19:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="William Henney" />
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/* 18 Jan 2016: Modified from the stylesheet by Zhitao Gong on
+https://github.com/gongzhitaao/orgcss/
+ */
+
+body {
+    max-width: 100%;
+    margin: 1% 1%;
+    font: normal normal normal 16px/1.6em 'Open Sans', sans-serif;
+    color: #333;
+}
+
+@media all and (min-width: 95ex) {
+    body {
+        max-width: 95ex;
+        margin: 1% auto;
+    }
+
+    .creator {
+        float: right;
+    }
+}
+
+@media not all and (min-width: 110ex) {
+
+    .creator {
+        float: left;
+    }
+
+    p img {
+        width: 95%;
+    }
+}
+
+.title {
+    padding: .5em 0;
+    text-align: center;
+    color: black;
+}
+
+.subtitle {
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+}
+
+.abstract {
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+}
+
+.abstract p:last-of-type:before {
+    content: "    ";
+    white-space: pre;
+}
+
+.status {
+    font-size: 90%;
+    margin: 2em auto;
+}
+
+[class^="section-number-"] {
+    margin-right: .5em;
+}
+
+#footnotes {
+    font-size: 90%;
+}
+
+.footpara {
+    display: inline;
+    margin: .2em auto;
+}
+
+.footdef {
+    margin-bottom: 1em;
+}
+
+.footdef sup {
+    padding-right: .5em;
+}
+
+a {
+    color: #527d9a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003355;
+    border-bottom: 1px dotted;
+}
+
+p img {
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #A5573E;
+    line-height: 1.6em;
+    font-family: 'Droid Serif', serif;
+}
+
+h4,h5,h6 {
+    font-size: 1em;
+}
+
+table {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid;
+}
+
+table td + td, table th + th {
+    border-left: 1px solid gray;
+}
+
+table tr {
+    border-top: 1px solid lightgray;
+}
+
+td,th {
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+code {
+    padding: 2px 5px;
+    margin: auto 1px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #333;
+    font-size: 90%;
+}
+
+blockquote {
+    margin: 1em 2em;
+    padding-left: 1em;
+    border-left: 3px solid #ccc;
+}
+
+kbd {
+    background-color: #f7f7f7;
+    font-size: 14px;
+    margin: 0 .1em;
+    padding: .1em .6em;
+}
+
+.figure {
+    padding: 1em;
+}
+
+.figure p {
+    text-align: center;
+}
+
+.todo {
+    color: red;
+    font-family: monospace;
+}
+
+.done {
+    color: green;
+    font-family: monospace;
+}
+
+.priority {
+    color: orange;
+    font-family: monospace;
+}
+
+.tag {
+    background-color: #eee;
+    font-family: monospace;
+    font-size: 80%;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.timestamp {
+    color: #bebebe;
+}
+
+.timestamp-kwd {
+    color: #5f9ea0;
+}
+
+.org-right {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+}
+
+.org-left {
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.org-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#postamble p, #preamble p {
+    font-size: 90%;
+    margin: .2em;
+}
+
+p.verse {
+    margin-left: 3%;
+}
+
+pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    font-family: monospace;
+    margin: 1.2em;
+    padding: 8pt;
+}
+
+pre.src {
+    overflow: auto;
+    padding-top: 1.2em;
+    position: relative;
+    font-size: 90%;
+    color: #dcdccc;
+    background-color: #3f3f3f; 
+}
+
+pre.src:before {
+    background-color: gray;
+    border: 1px solid black;
+    display: none;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    /* top: -10px; */
+}
+
+pre.src:hover:before {
+    display: inline;
+}
+
+pre.src-sh:before {
+    content: 'sh';
+}
+pre.src-bash:before {
+    content: 'bash';
+}
+pre.src-emacs-lisp:before {
+    content: 'Emacs Lisp';
+}
+pre.src-R:before {
+    content: 'R';
+}
+pre.src-python:before {
+    content: 'Python';
+}
+pre.src-org:before {
+    content: 'Org';
+}
+pre.src-c++:before {
+    content: 'C++';
+}
+pre.src-c:before {
+    content: 'C';
+}
+pre.src-html:before {
+    content: 'HTML'
+}
+
+caption.t-above {
+    caption-side: top;
+}
+
+caption.t-bottom {
+    caption-side: bottom;
+}
+
+th.org-right {
+    text-align: center;
+}
+
+th.org-left {
+    text-align: center;
+}
+
+th.org-center {
+    text-align: center;
+}
+
+td.org-right {
+    text-align: right;
+}
+
+td.org-left {
+    text-align: left;
+}
+
+td.org-center {
+    text-align: center;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.inlinetask {
+    background: #ffffcc;
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#org-div-home-and-up {
+    font-size: 70%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.linenr {
+    font-size: smaller;
+}
+
+.code-highlighted {
+    background-color: #ffff00;
+}
+
+#bibliography {
+    font-size: 90%;
+}
+
+#bibliography table {
+    width: 100%;
+}
+
+/* .org-info-js_info-navigation { */
+/*     border-style: none; */
+/* } */
+/* #org-info-js_console-label { */
+/*     font-size: 10px; */
+/*     font-weight: bold; */
+/*     white-space: nowrap; */
+/* } */
+/* .org-info-js_search-highlight { */
+/*     background-color: #ffff00; */
+/*     color: #000000; */
+/*     font-weight: bold; */
+/* } */
+/*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org55d060f">1. Astrofísica Estelar - Tarea 04</a>
+<ul>
+<li><a href="#org7b1913e">1.1. Nota importante</a></li>
+<li><a href="#org80e8f11">1.2. Plan general</a></li>
+<li><a href="#orga3becfc">1.3. Constantes físicos</a></li>
+<li><a href="#orgcc48f25">1.4. Balance de ionización de hidrógeno</a>
+<ul>
+<li><a href="#orga0b02cc">1.4.1. La ecuación de Saha general</a></li>
+<li><a href="#org8d79cf9">1.4.2. La abundancia de H⁺</a></li>
+<li><a href="#orgdcb4c0e">1.4.3. La abundancia de H⁻</a></li>
+<li><a href="#orgec1edd2">1.4.4. Tabla y gráficas de las fracciones de ionización</a></li>
+</ul>
+</li>
+<li><a href="#org2e87a7b">1.5. Excitación de los niveles ligados de H⁰</a>
+<ul>
+<li><a href="#orgeeb4351">1.5.1. Ejercicio 7: calcular la población del nivel \(n\)</a></li>
+</ul>
+</li>
+<li><a href="#org98b0544">1.6. Secciones rectas en función de longitud de onda</a>
+<ul>
+<li><a href="#org42fc791">1.6.1. Fotoionización de hidrógeno neutro H⁰</a></li>
+<li><a href="#org9d7457d">1.6.2. Libre-libre H⁺ + e⁻</a></li>
+<li><a href="#org68ce98e">1.6.3. Ion negativo de hidrógeno H⁻</a></li>
+</ul>
+</li>
+<li><a href="#org4d535ff">1.7. Balance de ionización para hidrógeno</a></li>
+<li><a href="#org8c016c5">1.8. </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org55d060f" class="outline-2">
+<h2 id="org55d060f"><span class="section-number-2">1</span> Astrofísica Estelar - Tarea 04</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+La meta de esta tarea es reproducir las figuras 8.5(a, b, c, d) del libro de Gray. Estas figuras muestran el coeficiente de absorción continua \(\kappa_\lambda\) para para diferentes temperaturas \(T\) y presiones electrónicas \(P_{e}\) en equilibrio termodinámico local (ETL).
+</p>
+
+<p>
+Por simplicidad, consideramos solo hidrógeno, en forma de átomo neutro y los iones positivos y negativos. Fracciones de ionización y excitación de los niveles ligados se calculan con las ecuaciones de Saha y de Boltzmann.
+</p>
+</div>
+
+<div id="outline-container-org7b1913e" class="outline-3">
+<h3 id="org7b1913e"><span class="section-number-3">1.1</span> Nota importante</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Hay unos errores en el libro, que están corregidos en <a href="http://astro.uwo.ca/~dfgray/Photospheres.html">esta página</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80e8f11" class="outline-3">
+<h3 id="org80e8f11"><span class="section-number-3">1.2</span> Plan general</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Las cuatro contribuciones a la opacidad que hay que calcular (anotadas con las ecuaciones relevantes de Gray) son:
+</p>
+
+<ol class="org-ol">
+<li>Ligado-libre de H⁺
+<ul class="org-ul">
+<li>ec. (8.8) - <i>pero ver abajo</i></li>
+</ul></li>
+<li>Libre-libre de H⁺ + e⁻
+<ul class="org-ul">
+<li>ec. (8.10)</li>
+</ul></li>
+<li>Ligado-libre de H⁻
+<ul class="org-ul">
+<li>ecs. (8.11) y (8.12)</li>
+</ul></li>
+<li>Libre-libre de H⁰ + e⁻
+<ul class="org-ul">
+<li>ec. (8.13)</li>
+</ul></li>
+</ol>
+
+<p>
+Noten que Gray defina la \(\kappa\) como la absorción por átomo de hidrógeno neutro.  Para convertir esta en la opacidad por masa, hay que multiplicar por la fracción de H<sup>0</sup> y dividir por la masa del hidrógeno: \(m_{\mathrm{H}}
+= 1.67 \times 10^{{-24}}\) g.  Ver su ecuación 8.18. 
+</p>
+
+<p>
+Para las contribuciones (1) y (2), las ecuaciones (8.8) y (8.10) de Gray mezclan la contribuciones de la ionización, la excitación, y las secciones rectas.  Yo creo que es más ilustrativo calcular estos partes por separado.   Es un poco más de trabajo, pero tiene la ventaja que podemos hacer pruebas y gráficas de las diferentes partes. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga3becfc" class="outline-3">
+<h3 id="orga3becfc"><span class="section-number-3">1.3</span> Constantes físicos</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Trabajamos con las energías en electron-volts, entonces queremos que todos nuestros constantes sean consistentes con esto.  Aquí hay una manera de obtener eso 
+</p>
+<div class="org-src-container">
+<pre class="src src-python">import numpy as np
+import matplotlib.pyplot as plt
+
+import astropy.units as u
+from astropy.constants import k_B, h, m_p, a0, m_e
+from astropy.constants import c as light_speed
+
+BOLTZMANN = k_B.to(u.eV/u.K).value
+PLANCK = h.to(u.eV*u.s).value
+RYDBERG = (1.0*u.Ry).to(u.eV).value
+HMINUS_EION = (0.754*u.eV).value
+BOHR_RADIUS = a0.cgs.value
+
+print('BOLTZMANN =', BOLTZMANN, 'eV/K')
+print('PLANCK =', PLANCK, 'eV.s')
+print('RYDBERG =', RYDBERG, 'eV')
+print('HMINUS_EION =', HMINUS_EION, 'eV')
+print('BOHR_RADIUS =', BOHR_RADIUS, 'cm')
+</pre>
+</div>
+
+<p>
+A mi me da el resultado:
+</p>
+<pre class="example" id="orge28107f">
+BOLTZMANN = 8.617330337217213e-05 eV/K
+PLANCK = 4.1356676623401646e-15 eV.s
+RYDBERG = 13.60569300965081 eV
+HMINUS_EION = 0.754 eV
+BOHR_RADIUS = 5.2917721067e-09 cm
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orgcc48f25" class="outline-3">
+<h3 id="orgcc48f25"><span class="section-number-3">1.4</span> Balance de ionización de hidrógeno</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Las diferentes contribuciones a la opacidad son proporcionales a las abundancias de diferentes especies.  Por ejemplo, ligado-libre es proporcional a H⁰, mientras libre-libre es proporcional a H⁺. Por lo tanto, tenemos que conocer el grado de ionización.
+</p>
+
+<p>
+Entonces, vamos a resolver la ecuación Saha, de manera similar a la Tarea~01.
+Una diferencia es que vamos a suponer que conocemos la densidad total de H, y que la densidad electrónica (o presión electrónica) es algo que hay que encontrar.
+</p>
+</div>
+
+<div id="outline-container-orga0b02cc" class="outline-4">
+<h4 id="orga0b02cc"><span class="section-number-4">1.4.1</span> La ecuación de Saha general</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+Usaremos la siguiente versión de la ecuación de Saha:
+\[
+\frac{N_{j+1} N_e}{N_j} = \Phi_j(T), 
+\]
+que relaciona las densidades de las etapas de ionización adyacentes: \(j\) y \(j+1\).
+</p>
+
+<p>
+La función en el lado derecho es
+\[
+\Phi_j(T) = 2 \left( \frac{2\pi m_e k T}{h^2} \right)^{1.5} \frac{U_{j+1}}{U_j} e^{-E_j/k T},
+\]
+donde \(E_j\) es la $j$-ésima potencia de ionización y \(U_j\), \(U_{j+1}\) son las funciones de partición.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org334d993"></a>Ejercicio 1: Evaluar el constante en la ecuación Saha<br />
+<div class="outline-text-5" id="text-1-4-1-1">
+<p>
+Usar los constantes <code>k_B</code>, <code>m_e</code>, <code>h</code> (ver arriba) y <code>np.pi</code> para evaluar el constante $2 (2&pi; m<sub>e</sub> k / h<sup>2</sup>)<sup>3/2</sup> $ en sistema cgs:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">saha_C = ????
+saha_C.cgs
+</pre>
+</div>
+
+<p>
+Note que unos libros (por ejemplo, Hubeny y Mihalas) usan un constante que es el recíproco de esto.
+</p>
+</div>
+</li>
+
+<li><a id="orgf06596c"></a>Ejercicio 2: Escribir una función para evaluar \(\Phi_j(T)\)<br />
+<div class="outline-text-5" id="text-1-4-1-2">
+<p>
+Usamos valores de defecto para la potencia de ionización <code>Eion</code> y las funciones de partición, <code>Un</code> y <code>Ui</code>, que son apropiadas para H⁰ (a bajas temperaturas se puede aproximar \(U_j = 2\), \(U_{j+1} = 1\)).  Hay que usar el constante <code>BOLTZMANN</code> en eV/K que definimos antes.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">SAHA_CONSTANT = saha_C.cgs.value
+
+def Saha_Phi(T, Eion=1.0*RYDBERG, Ui=1.0, Un=2.0):
+    """
+    Función Phi(T) = (Ni Ne / Nn) de Saha para energía de ionización Eion (en eV),
+    y con funciones de partición Ui y Un.  La T es en kelvin
+    """
+    return SAHA_CONSTANT * ?????
+</pre>
+</div>
+
+<p>
+Luego, probamos la función con unas temperaturas típicas:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">Ts = np.array([3, 5, 9, 15])*u.kK
+Ts.cgs
+</pre>
+</div>
+<p>
+Llamamos la función así:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">Saha_Phi(Ts.cgs.value)
+</pre>
+</div>
+<p>
+Note que el argumento <code>T</code> a <code>Saha_Phi</code> es un número normal (<code>float</code>).
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org8d79cf9" class="outline-4">
+<h4 id="org8d79cf9"><span class="section-number-4">1.4.2</span> La abundancia de H⁺</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+Suponemos que la abundancia de H⁻ es siempre una fracción despreciable, entonces tenemos números iguales de electrones y electrones libres: \(N_+ = N_e\).
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgefa2714"></a>Ejercicio 3: Encontrar la fracción de ionización para H⁺<br />
+<div class="outline-text-5" id="text-1-4-2-1">
+<p>
+Muestre que la fracción de H⁺, \(y = N_+ / N_H\), es la solución de la ecuación cuadrática \(y^2 + A y - A = 0\), donde \(A = \Phi_{H_0} / N_H\).
+</p>
+
+<p>
+Una función para evaluar esta fracción en función de la densidad de H y la temperatura podría ser la siguiente:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">@np.vectorize
+def Hplus_fraction(Hden, T):
+    """
+    Calcular fracción de hidrógeno ionizado
+
+    `Hden` es densidad de partículas totales de H en cm^{-3}
+    `T` es temperatura en K
+    """
+    A = Saha_Phi(T) / Hden
+    # Resolver polinomio: y**2 + A*y - A = 0
+    y = np.roots([1.0, A, -A]).max() # tomar raiz positivo
+    return y
+</pre>
+</div>
+<p>
+Notas:
+</p>
+<ol class="org-ol">
+<li>Usamos la función <code>np.roots()</code> que encuentra todos los raíces de un polinomio. Esta devuelva dos raíces, entonces usamos <code>.max()</code> para seleccionar la positiva.</li>
+<li>Usamos el decorador <code>@np.vectorize</code> para que se puede aplica la función a vectores de densidad y temperatura.  Es necesario aquí porque <code>np.roots()</code> es para un polinomio a la vez.</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgdcb4c0e" class="outline-4">
+<h4 id="orgdcb4c0e"><span class="section-number-4">1.4.3</span> La abundancia de H⁻</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+La ecuación de Saha para H⁻ es
+\[
+\frac{N_{H^0} N_e}{N_{H^-}} = \Phi_{H^-}(T),
+\]
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc75a040"></a>Ejercicio 4:  Encontrar la fracción de ionización para H⁻<br />
+<div class="outline-text-5" id="text-1-4-3-1">
+<p>
+Muestre que 
+\[
+N_{H^-} \big/ N_H = (1 - y) y N_H \big/ \Phi_{H^-}
+\]
+y entonces escribe una función para calcular esta fracción:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">def Hminus_fraction(Hden, T):
+    """
+    Calcular fracción del ión negativo de hidrógeno
+    """ 
+    y = Hplus_fraction(Hden, T)
+    return ????
+</pre>
+</div>
+<p>
+En esta se puede usar la función <code>Saha_Phi</code>, pero cambiando los argumentos opcionales: <code>Saha_Phi(T, Eion=????, Ui=????, Un=????)</code>
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgec1edd2" class="outline-4">
+<h4 id="orgec1edd2"><span class="section-number-4">1.4.4</span> Tabla y gráficas de las fracciones de ionización</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<p>
+Podemos definir unas densidades típicas para atmósferas, y luego escribir una tabla de las fracciones:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">Ns = np.array([10, 3, 1, 0.5])*1e15/u.cm**3
+Ns
+</pre>
+</div>
+
+<p>
+Usamos la librería <code>astropy.table</code> para construir la tabla para que salga con formato bonito en el notebook:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">from astropy.table import Table
+Table(
+  data=[
+    Column(Ns.cgs, name=r'$N_H$'),
+    Column(Ts.cgs, name=r'$T$'),
+    Column(Hplus_fraction(Ns.cgs.value, Ts.cgs.value), name=r'$N_+/N_H$'),
+    Column(Hminus_fraction(Ns.cgs.value, Ts.cgs.value), name=r'$N_-/N_H$'),
+  ])
+</pre>
+</div>
+<p>
+Note que la fracción de H⁻ es siempre muy pequeño, lo cual justifica despreciarla cuando estimamos la densidad electrónica.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org5ddd2dc"></a>Ejercicio 5: Graficar la fracción de H⁺ contra temperatura<br />
+<div class="outline-text-5" id="text-1-4-4-1">
+<p>
+Definimos una serie de densidades: \(\{10^4, 10^6, \dots, 10^{18}, 10^{20}\}\) y un rango de temperaturas entre 2000 y 20,000 K:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">logNgrid = range(4, 20, 2)
+Tgrid = np.linspace(2e3, 2e4, 500)
+</pre>
+</div>
+<p>
+Grafique la \(y\) en función de la \(T\) para cada densidad (una línea para cada valor de <code>logNgrid</code>). Use la función <code>Hplus_fraction</code> de arriba.
+Para las densidades típicas de fotósferas, ¿en que rango de temperatura ocurre la transición entre hidrógeno neutro e ionizado?
+</p>
+</div>
+</li>
+
+<li><a id="org6902e0f"></a>Ejercicio 6: Graficar la fracción de H⁻ contra temperatura<br />
+<div class="outline-text-5" id="text-1-4-4-2">
+<p>
+Repite la gráfica pero para el ion negativo. Esta vez, use una escala logarítmica en el eje vertical (una manera de hacerlo es usar <code>ax.set_yscale("log")</code>).  Se debe encontrar que la fracción \(N_{H^-} / N_H\) tiene un pico en una temperatura intermedia.  Comparando con la gráfica anterior ¿a qué valor de \(y\) corresponde este pico? ¿por qué? 
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org2e87a7b" class="outline-3">
+<h3 id="org2e87a7b"><span class="section-number-3">1.5</span> Excitación de los niveles ligados de H⁰</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Utilizamos la ecuación de Boltzmann para calcular la población fraccional de un nivel ligado dado, \(n\), de hidrógeno neutro:
+\[
+\frac{N_n}{N_{H^0}} = \frac{g_n}{U(T)} e^{-E_n/k T}
+\]
+donde la degenerancia es \(g_n = 2 n^2\) y la energía arriba del nivel base (\(n=1\)) es \(E_n = 1 - n^{-2}\) Rydberg.
+</p>
+</div>
+
+<div id="outline-container-orgeeb4351" class="outline-4">
+<h4 id="orgeeb4351"><span class="section-number-4">1.5.1</span> Ejercicio 7: calcular la población del nivel \(n\)</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+Se puede suponer que la función de partición es 2.  Complete la función siguiente:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">def H0_level_population(n, T, U=2.0):
+    """
+    Calcular la población ETL del nivel n de hidrógeno neutro
+    a una temperatura T kelvin
+    """
+    # Energía de excitación respeto a n=1
+    E = ????
+    # Peso estadístico
+    g = ????
+    return ????
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org98b0544" class="outline-3">
+<h3 id="org98b0544"><span class="section-number-3">1.6</span> Secciones rectas en función de longitud de onda</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org42fc791" class="outline-4">
+<h4 id="org42fc791"><span class="section-number-4">1.6.1</span> Fotoionización de hidrógeno neutro H⁰</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+Para la fotoionización del nivel \(n\), hay una energía umbral, \(E_n = n^{-2}\ \mathrm{Ry}\), con una frecuencia mínima asociada, \(\nu_n = E_n/h\), o longitud de onda máxima, \(\lambda_n = h c / E_n\). 
+La sección eficaz se da por  \[ \sigma_\mathrm{bf}(n, \nu) = \sigma_0 n \frac{\nu_n^3}{\nu^3} g_\mathrm{bf}(n, \nu) \] donde \(\sigma_0 = 2.815\times 10^{29} \nu_1^{-3} = 7.906 \times 10^{-18}\ \mathrm{cm}^2\) y \(g_\mathrm{bf}(n, \nu)\) es el factor Gaunt que corrige por efectos de la mecánica cuántica.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org6fef9c4"></a>Ejercicio 8: Escribe una función para calcular la sección eficaz ligado-libre de H⁰<br />
+<div class="outline-text-5" id="text-1-6-1-1">
+<p>
+Se puede seguir un ejemplo como esto:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">@np.vectorize
+def xsec_H0_boundfree(n, nu, xsec0=7.906e-18):
+    """
+    Sección eficaz de fotoionización de nivel n de H0 a frecuencia nu Hz
+
+    Multiplicar por la fracción de H0(n) para dar cm^2 por átomo H^0
+    """
+    E = PLANCK*nu               # energía de fotón
+    E0 = RYDBERG/n**2           # energía de ionización de nivel n
+
+    if E &gt;= E0:
+        xsec = ???? # ESCRIBIR ALGO AQUÍ
+    else:
+        xsec = 0.0
+
+    return xsec
+</pre>
+</div>
+
+<p>
+Para evaluar el factor Gaunt, se puede usar la aproximación de Menzel y Perkis que se da en ec.~(8.5): \[
+g_\mathrm{bf}(n, \nu) = 1 - \frac{0.3456}{(\lambda R)^{1/3}} 
+\left( \frac{\lambda R}{n^2} - \frac{1}{2}\right) .
+\]
+Se sugiere escribir una función para esto, por ejemplo:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">def gaunt_H0_boundfree(n, nu):
+  """
+  Factor Gaunt para fotoionización de nivel `n` de H0 a frecuencia `nu` Hz
+  """
+  lambda_R = RYDBERG/(PLANCK*nu)
+  return ????? # ESCRIBIR ALGO AQUÍ
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org65fb43d"></a>Ejercicio 2: Grafique los resultados contra λ para \(n \le 5\)<br />
+<div class="outline-text-5" id="text-1-6-1-2">
+<p>
+Primero, se puede definir un arreglo de \(\lambda\) (<code>wavs</code>) un arreglo equivalente en frecuencia (<code>freqs</code>). 
+</p>
+<div class="org-src-container">
+<pre class="src src-python">wavs = np.linspace(40.0, 20000.0, 500)*u.AA
+freqs = (light_speed/wavs).cgs.value
+</pre>
+</div>
+
+<p>
+Por ejemplo, para graficar los factores Gaunt se puede hacer algo así:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">fig, ax = plt.subplots(1, 1)
+for n in range(1, 5):
+  # Restringir a las frecuencias capaces de ionizar cada nivel
+  m = h*freqs &gt;= 1.0*u.Ry/n**2
+  ax.plot(wavs[m], gaunt_H0_boundfree(n, freqs[m]), 
+         label=r'$n = {}$'.format(n))
+ax.legend()
+ax.set_ylim(0.0, None)
+ax.set_xlabel(r'Wavelength, Å')
+ax.set_ylabel(r'$g_\mathrm{bf}(n, \nu)$')
+ax.set_title('Bound-free gaunt factors');
+</pre>
+</div>
+<p>
+El factor de Gaunt debe ser de orden 1, con tendencia de aumentarse un poco en la ultravioleta.  
+</p>
+
+<p>
+Luego repite la gráfica pero para las secciones rectas.  Cheque que puedes reproducir la figura 8.2 de Gray.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org9d7457d" class="outline-4">
+<h4 id="org9d7457d"><span class="section-number-4">1.6.2</span> Libre-libre H⁺ + e⁻</h4>
+</div>
+
+<div id="outline-container-org68ce98e" class="outline-4">
+<h4 id="org68ce98e"><span class="section-number-4">1.6.3</span> Ion negativo de hidrógeno H⁻</h4>
+</div>
+</div>
+
+<div id="outline-container-org4d535ff" class="outline-3">
+<h3 id="org4d535ff"><span class="section-number-3">1.7</span> Balance de ionización para hidrógeno</h3>
+</div>
+
+<div id="outline-container-org8c016c5" class="outline-3">
+<h3 id="org8c016c5"><span class="section-number-3">1.8</span> </h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: William Henney</p>
+<p class="date">Created: 2020-10-24 Sat 19:47</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
